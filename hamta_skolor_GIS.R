@@ -15,7 +15,7 @@
 # ===========================================================
 
 # Inställningar.
-utmapp <- "~/Statistik/Utbildning/Utdata/"
+utmapp <- "~/GIS/GIS-lager/Skolor/"
 spara_GIS <- TRUE
 spara_CSV <- TRUE
 
