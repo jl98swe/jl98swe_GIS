@@ -25,7 +25,7 @@ if (!require(jsonlite)) install.packages("jsonlite")   # Hantera JSON-data.
 if (!require(tidyverse)) install.packages("tidyverse") # Databearbetning.
 if (!require(sf)) install.packages("sf")               # Bearbeta geografisk data.
 
-# Kommun koder för Norrbotten.
+# Kommun koder för länen.
 kommunkoder <- c(
   "2260",
   "2262",
