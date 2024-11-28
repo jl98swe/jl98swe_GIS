@@ -21,9 +21,10 @@ if (!require(tidyverse)) install.packages("tidyverse") # Databearbetning.
 if (!require(sf)) install.packages("sf")               # Bearbeta geografisk data.
 
 # Inställningar.
-utmapp <- "~/GIS/GIS-lager/Skolor/"                    # Välj mapp att spara filerna i.
+utmapp <- "~/GIS/GIS-lager/"                           # Välj mapp att spara filerna i.
 spara_GIS <- TRUE                                      # Om GeoJSON-fil ska sparas.
-lan <- c("Norrbottens län")                            # Vektor med län som ska sparas.
+lan <- c("Norrbottens län", "Västerbottens län",
+         "Västernorrlands län", "Jämtlands län")       # Vektor med län som ska sparas.
 filsokvag <- "~/GIS/Pipos_serviceanalys_export.xlsx"   # Välj filsökvägen för filen som är hämtad från Pipos.
 
 # Läs in datan från Pipos.
