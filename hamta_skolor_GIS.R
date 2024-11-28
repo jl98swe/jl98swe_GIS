@@ -15,9 +15,9 @@
 # ===========================================================
 
 # Inställningar.
-utmapp <- "~/GIS/GIS-lager/Skolor/"
-spara_GIS <- TRUE
-spara_CSV <- TRUE
+utmapp <- "~/GIS/GIS-lager/Skolor/" # Välj mapp att spara filerna i.
+spara_GIS <- TRUE                   # Om GeoJSON-fil ska sparas.
+spara_CSV <- TRUE                   # Om CSV-fil (semikolonseparerad) ska sparas.
 
 # Installera nödvändiga paket om de inte redan är installerade.
 if (!require(httr)) install.packages("httr")           # För HTTP-förfrågningar.
@@ -148,7 +148,7 @@ if (spara_GIS) {
 
 # Spara rådatan till en CSV-fil.
 if (spara_CSV) {
-  write.csv(skolor_detalj_df,
+  write.csv2(skolor_detalj_df,
             file = paste0(utmapp, "Skolor-GIS_rådata.csv"),
             row.names = FALSE)
 }
